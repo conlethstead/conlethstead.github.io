@@ -1,0 +1,11 @@
+.home {
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem 2rem;
+  background-color: #f0f0f0;
+  height: 50rem;
+
+  h1 {
+    font-size: 4rem;
+  }
+}

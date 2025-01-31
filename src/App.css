@@ -1,38 +1,38 @@
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .nav-header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    .nav-list {
+      margin: 1rem;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      background-color: #282c34;
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      color: cream;
+
+      a {
+        text-decoration: none;
+        color: rgb(255, 253, 208);
+      }
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Add styles for Skills and Contact sections */
+#skills {
+  padding: 2rem;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+#contact {
+  padding: 2rem;
+  background-color: #e0e0e0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
