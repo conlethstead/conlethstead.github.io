@@ -1,38 +1,33 @@
 .App {
   text-align: center;
+  color: #332B29;
+  
+
 
   .nav-header {
-    background-color: white;
+    background-color: #332B29;
     display: flex;
     flex-direction: column;
-    font-size: calc(10px + 2vmin);
+    align-items: end;
 
     .nav-list {
       margin: 1rem;
       padding: 1rem 2rem;
       border-radius: 1rem;
-      background-color: #282c34;
       display: flex;
-      justify-content: space-evenly;
+      gap: 1.5rem;
       list-style: none;
-      color: cream;
-
+      
       a {
         text-decoration: none;
-        color: rgb(255, 253, 208);
+        color: #EEAE56;
+        font-size: 1.5rem;
       }
     }
   }
-}
 
-/* Add styles for Skills and Contact sections */
-#skills {
-  padding: 2rem;
-  background-color: #f0f0f0;
-}
-
-#contact {
-  padding: 2rem;
-  background-color: #e0e0e0;
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 

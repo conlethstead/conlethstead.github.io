@@ -1,18 +1,16 @@
 .skills {
-  padding: 1rem;
-  background-color: #f0f0f0;
-}
+  padding: 2rem;
+  /* border-radius: 1rem;
+  margin: 2rem 2rem; */
+  background-color: #F9D9CE;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-.skills h2 {
-  color: #333;
-}
-
-.skills ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills li {
-  margin: 0.5rem 0;
-  color: #666;
+  .languages {
+    width: 80%;;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #332B29;
+  }
 }

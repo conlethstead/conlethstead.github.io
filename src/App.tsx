@@ -1,26 +1,24 @@
 import './App.css';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
+import { About } from './pages/About';
+import { Projects } from './pages/Projects';
+import { Skills } from './pages/Skills';
+import { Contact } from './pages/Contact';
 
 function App() {
   return (
     <div className="App">
       <header className="nav-header">
         <ul className="nav-list">
-          <a href="#home">Conleth</a>
+          {/* put in home icon ^ */}
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
+          {/* <a href="#timeline">Timeline</a>
+          <a href="#resume">Resume</a> */}
           {/* add resume link */}
         </ul>
       </header>
-      <section id="home">
-        <Home />
-      </section>
       <section id="about">
         <About />
       </section>

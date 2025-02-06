@@ -1,7 +1,34 @@
 .about {
   padding: 2rem;
-  border-radius: 1rem;
-  margin: 2rem 2rem;
-  background-color: #e0e0e0;
-  height: 50rem;
+  /* border-radius: 1rem; */
+  /* margin: 2rem 2rem; */
+  background-color: white;
+
+  .profile {
+    margin: 5rem 10rem;
+    /* padding-top: 5rem; */
+    display: flex;
+    justify-content: space-around;
+
+    .profile-pic {
+      width: 25%;
+      border-radius: 50%;
+      margin-right: 2rem;
+      background-color: aqua;
+      
+    }
+    
+    .pic {
+      border-radius: 50%;
+      height: 30rem;
+      border: 10px solid #EEAE56;
+    }
+
+    .information {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+  }
 }
