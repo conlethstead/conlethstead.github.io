@@ -15,20 +15,30 @@
       border-radius: 50%;
       margin-right: 2rem;
       background-color: aqua;
-      
     }
-    
+
     .pic {
       border-radius: 50%;
       height: 30rem;
-      border: 10px solid #EEAE56;
+      border: 10px solid #9fdddc;
     }
 
     .information {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-direction: column;
-      text-align: right;
+      text-align: left;
+
+      h2 {
+        font-size: 2rem;
+        margin: 0;
+        font-weight: bolder;
+      }
+
+      .title {
+        font-size: 1rem;
+        font-weight: bold;
+      }
     }
   }
 }

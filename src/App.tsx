@@ -8,16 +8,20 @@ function App() {
   return (
     <div className="App">
       <header className="nav-header">
-        <ul className="nav-list">
+        <div className="nav">
+          <a href="#home">Conleth</a>   
           {/* put in home icon ^ */}
+          <ul className="nav-list">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
+          </ul>
+            
           {/* <a href="#timeline">Timeline</a>
           <a href="#resume">Resume</a> */}
           {/* add resume link */}
-        </ul>
+        </div>
       </header>
       <section id="about">
         <About />

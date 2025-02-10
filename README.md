@@ -57,4 +57,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Colors used
 
-332B29 (black), EEAE56 (orange), 9FDDDC (blue), F9D9CE (pink), 9FD79A (green)
+332B29 (black), EEAE56 (orange), 9FDDDC (blue), F9D9CE (pink), 9FD79A (green), FFFEE3 (cream)
