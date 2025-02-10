@@ -15,9 +15,9 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
           </ul>
             
+          {/* <a href="#contact">Contact</a> */}
           {/* <a href="#timeline">Timeline</a>
           <a href="#resume">Resume</a> */}
           {/* add resume link */}
@@ -32,9 +32,9 @@ function App() {
       <section id="skills">
         <Skills />
       </section>
-      <section id="contact">
+      {/* <section id="contact">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 }

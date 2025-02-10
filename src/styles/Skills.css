@@ -1,7 +1,5 @@
 .skills {
   padding: 2rem;
-  /* border-radius: 1rem;
-  margin: 2rem 2rem; */
   background-color: white;
   align-items: center;
   display: flex;
@@ -10,7 +8,7 @@
   .languages {
     width: 80%;;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     color: #332B29;
   }
 }
