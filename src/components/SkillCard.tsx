@@ -1,4 +1,4 @@
-import { SkillCardProps } from '../Components';
+import { SkillCardProps } from '../components/Components';
 import '../styles/SkillCard.css';
 
 

@@ -1,7 +1,11 @@
 .projects {
   padding: 2rem;
-  /* border-radius: 1rem;
-  margin: 2rem 2rem; */
-  height: 50rem;
   border: #9FDDDC 3px dashed;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
 }

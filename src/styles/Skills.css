@@ -4,11 +4,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   .languages {
     width: 80%;;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     color: #332B29;
   }
 }

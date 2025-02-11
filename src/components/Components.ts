@@ -6,6 +6,9 @@ export interface SkillCardProps {
 
 export interface ProjectCardProps {
     name: string;
+    image: string;
+    overview: string;
     description: string;
-    link: string;
+    technologies: string;
+    challenges: string;
 }
