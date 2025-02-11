@@ -1,11 +1,21 @@
 .projects {
   padding: 2rem;
   border: #9FDDDC 3px dashed;
+  background-color: #9FD79A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 2rem;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-items: center;
+  }
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  justify-items: center;
-}

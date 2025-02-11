@@ -2,66 +2,68 @@
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    /* height: 20rem;
-    width: 15rem; */
+    overflow: hidden;
+    width: 30rem;
+    height: 30rem;
+    border: #FFFEE3 0.5rem solid;
     
     h3 {
-        background-color: #9FDDDC;
+        background-color: #FFFEE3;
         padding: 0.5rem;
-        border-radius: 1rem;
         font-size: 2rem;
         margin: 0;
+        z-index: 1;
     }
     
     img {
-        height: 20rem;
-        width: 30rem;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        border-radius: 1rem;
-        border: red 3px dashed;
+        z-index: 0;
+        transform: translateY(-10%); /* Adjust the value as needed */
     }
-}
 
-.modal {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
-}
+    .modal {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0,0,0,0.4); 
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        border-radius: 1rem;
+        padding: 2rem;
+        border: 1px solid #888;
+        width: 80%; 
+        height: 60%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
-.modal-content {
-    background-color: #fefefe;
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 40rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    animation: fadeIn 0.3s;
-}
+        h3 {
+            all: unset;
+            font-size: 1.5rem;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/Projects.css';
 import ProjectCard from '../components/ProjectCard';
 import threadImage from '../images/thread.jpeg'
-
-
+import memoryImage from '../images/memory.jpeg'
+import networkImage from '../images/network.jpeg'
 
 export const Projects = () => {
   const projects = [
@@ -17,7 +17,7 @@ export const Projects = () => {
     },
     {
       name: 'Memory Manager',
-      image: "image.png",
+      image: memoryImage,
       description: 'A memory management system for efficient allocation.',
       overview: "Overview",
       technologies: "Technologies",
@@ -25,7 +25,7 @@ export const Projects = () => {
     },
     {
       name: 'Multithreaded Network File System',
-      image: "image.png",
+      image: networkImage,
       description: 'A file system supporting multithreaded operations.',
       overview: "Overview",
       technologies: "Technologies",
