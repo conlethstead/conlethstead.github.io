@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac5a367d.css",
-    "main.js": "/static/js/main.b55fff96.js",
+    "main.css": "/static/css/main.197df871.css",
+    "main.js": "/static/js/main.9a4b5248.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/gradPic.png": "/static/media/gradPic.d6f9f5707dd84dc9b199.png",
     "static/media/thread.jpeg": "/static/media/thread.c00a8e490819f93da072.jpeg",
+    "static/media/network.jpeg": "/static/media/network.45fd62b8398561ab9fa1.jpeg",
+    "static/media/memory.jpeg": "/static/media/memory.512c679c5e8c5ce5adec.jpeg",
     "static/media/react-brands-solid.svg": "/static/media/react-brands-solid.e5af4718ac40d4ea165cdd9fa7232737.svg",
     "static/media/js-brands-solid.svg": "/static/media/js-brands-solid.e4f8ed3f5ab67521fef7a1ccce003c97.svg",
     "index.html": "/index.html",
     "static/media/icons8-kotlin.svg": "/static/media/icons8-kotlin.6bf502793ae93c8572a1bee364284faf.svg",
-    "main.ac5a367d.css.map": "/static/css/main.ac5a367d.css.map",
-    "main.b55fff96.js.map": "/static/js/main.b55fff96.js.map",
+    "main.197df871.css.map": "/static/css/main.197df871.css.map",
+    "main.9a4b5248.js.map": "/static/js/main.9a4b5248.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac5a367d.css",
-    "static/js/main.b55fff96.js"
+    "static/css/main.197df871.css",
+    "static/js/main.9a4b5248.js"
   ]
 }
