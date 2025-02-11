@@ -11,23 +11,23 @@ export const Projects = () => {
       name: 'Thread Library',
       image: threadImage,
       description: "A thread library",
-      overview: "Overview",
+      overview: "A custom C++ thread library featuring multithreading, mutexes, condition variables, and CPU management for efficient concurrent execution.",
       technologies: "Technologies",
       challenges: "Challenges"
     },
     {
       name: 'Memory Manager',
       image: memoryImage,
+      overview: "A virtual memory management system for an Operating System, handling memory allocation, page faults, and process management with swap and file-backed pages.",
       description: 'A memory management system for efficient allocation.',
-      overview: "Overview",
       technologies: "Technologies",
       challenges: "Challenges"
     },
     {
       name: 'Multithreaded Network File System',
       image: networkImage,
+      overview: "A file server with a hierarchical file structure, inode-based storage, and network operations for reading, writing, creating, and deleting files and directories.",
       description: 'A file system supporting multithreaded operations.',
-      overview: "Overview",
       technologies: "Technologies",
       challenges: "Challenges"
     },

@@ -9,7 +9,7 @@ export const About = () => {
         <img src={gradPic} alt="gradPic" className="pic" />
         <div className="information">
           <h2 className="name">Conleth Stead</h2>
-          <p className="title">U of M '24, LSA Student, Software Engineer</p>
+          <p className="title">U of M LSA '24, Software Engineer, Ford Motor Company</p>
           <p className="intro">
             Hello, my name is Conleth and I am a software engineer that enjoys
             building complex products and taking on new challenges. With a
