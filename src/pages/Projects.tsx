@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import threadImage from '../images/thread.jpeg'
 import memoryImage from '../images/memory.jpeg'
 import networkImage from '../images/network.jpeg'
+import pokerImage from "../images/WelcometoPoker.png";
 
 export const Projects = () => {
   const projects = [
@@ -41,7 +42,7 @@ export const Projects = () => {
     },
     {
       name: 'Poker Hand Calculator',
-      image: "image.png",
+      image: pokerImage,
       description: 'A tool to calculate the best poker hands.',
       overview: "Overview",
       technologies: "Technologies",

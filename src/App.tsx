@@ -2,7 +2,6 @@ import './App.css';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
-// import { Contact } from './pages/Contact';
 
 function App() {
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -29,8 +28,8 @@ function App() {
             <a href="#about" onClick={handleNavClick}>About</a>
             <a href="#projects" onClick={handleNavClick}>Projects</a>
             <a href="#skills" onClick={handleNavClick}>Skills</a>
+            {/* <a href={resume} download="Conleth_Stead_Resume.pdf">Resume</a> */}
           </ul>
-          {/* <a href="#contact">Contact</a> */}
           {/* <a href="#timeline">Timeline</a>
           <a href="#resume">Resume</a> */}
           {/* add resume link */}
@@ -45,9 +44,6 @@ function App() {
       <section id="skills">
         <Skills />
       </section>
-      {/* <section id="contact">
-        <Contact />
-      </section> */}
     </div>
   );
 }

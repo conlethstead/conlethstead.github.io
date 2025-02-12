@@ -4,6 +4,8 @@ import cplusplusImage from "../images/icons8-c++-48.png";
 import javaImage from "../images/js-brands-solid.svg";
 import kotlinImage from "../images/icons8-kotlin.svg";
 import reactImage from "../images/react-brands-solid.svg";
+import springImage from "../images/icons8-spring-boot.svg";
+import pythonImage from "../images/python-brands-solid.svg";
 
 export const Skills = () => {
   return (
@@ -14,7 +16,7 @@ export const Skills = () => {
       <div className="languages">
         <SkillCard
           skill={{
-            name: "C++",
+            name: "C/C++",
             image: cplusplusImage,
             description:
               "I have over 3 years of programming experience in C++ through academic projects. These projects include ... This extensive knowledge has helped me learn new languages quickly.",
@@ -43,18 +45,20 @@ export const Skills = () => {
             description: "I have 3 years of experience leveraging React components and hooks to develop responsive web applications in academic projects and in professional work.",
           }}
           />
-          {/* <SkillCard
-            skill={{
-              name: "Swift",
-              description: "I have been using Swift for 2 years.",
-            }}
-          /> */}
-          {/* <SkillCard
-            skill={{
-              name: "Java",
-              description: "I have been using Java for 5 years.",
-            }}
-          /> */}
+        <SkillCard
+          skill={{
+            name: "Spring Boot",
+            image: springImage,
+            description: "I have been using Swift for 2 years.",
+          }}
+        />
+        <SkillCard
+          skill={{
+            name: "Python",
+            image: pythonImage,
+            description: "I have been using Java for 5 years.",
+          }}
+        />
       </div>
     </div>
   );
