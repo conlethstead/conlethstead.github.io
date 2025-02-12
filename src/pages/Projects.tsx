@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/Projects.css';
 import ProjectCard from '../components/ProjectCard';
-import threadImage from '../images/thread.jpeg'
+import threadImage from '../images/threadLibrary.png'
 import memoryImage from '../images/memory.jpeg'
-import networkImage from '../images/network.jpeg'
+import networkImage from '../images/networkFile.png'
 import pokerImage from "../images/WelcometoPoker.png";
 
 export const Projects = () => {
