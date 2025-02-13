@@ -10,7 +10,7 @@ function App() {
     const targetElement = document.getElementById(targetId!);
     const headerOffset = document.querySelector('.nav-header')?.clientHeight || 0;
     const elementPosition = targetElement?.getBoundingClientRect().top || 0;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    const offsetPosition = elementPosition - headerOffset;
 
     window.scrollTo({
       top: offsetPosition,

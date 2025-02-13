@@ -6,15 +6,27 @@ const ProjectCard = ({ project } : { project: ProjectCardProps }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsModalOpen(false);
+      }
+    };
+
     if (isModalOpen) {
       document.body.classList.add('no-scroll');
+      window.addEventListener('keydown', handleKeyDown);
     } else {
       document.body.classList.remove('no-scroll');
+      window.removeEventListener('keydown', handleKeyDown);
     }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [isModalOpen]);
 
   const openModal = () => {
-  setIsModalOpen(true);
+    setIsModalOpen(true);
   };
 
   const closeModal = () => {
@@ -36,10 +48,9 @@ const ProjectCard = ({ project } : { project: ProjectCardProps }) => {
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
-            <h3 className="project-name">{project.name}</h3>
-            <p className="project-description">{project.description}</p>
-            <p className="project-technologies">{project.technologies}</p>
-            <p className="project-challenges">{project.challenges}</p>
+            <div className="module-info">
+              {project.moduleInfo}
+            </div>
           </div>
         </div>
       )}

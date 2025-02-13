@@ -8,7 +8,5 @@ export interface ProjectCardProps {
     name: string;
     image: string;
     overview: string;
-    description: string;
-    technologies: string;
-    challenges: string;
+    moduleInfo: React.ReactNode;
 }
