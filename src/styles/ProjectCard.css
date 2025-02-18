@@ -75,10 +75,12 @@
         border-radius: 2rem;
         padding: 2rem;
         border: 1px solid #888;
-        width: 80%; 
-        height: 70%;
+        width: 80%;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
         h2 {
             all: unset;
@@ -90,9 +92,8 @@
             color: #EEAE56;
             font-size: 3rem;
             font-weight: bold;
-            position: absolute;
-            top: 8.5rem;
-            right: 11rem;
+            align-self: flex-end;
+            margin-top: -1rem;
         }
         
         .close:hover,

@@ -5,13 +5,13 @@ import gradPic from "../images/gradPic.png";
 export const About = () => {
   return (
     <div className="about">
+      <h2 className="name">Conleth Stead</h2>
+      <p className="title">U of M LSA '24, Software Engineer, Ford Motor Company</p>
       <div className="profile">
         <img src={gradPic} alt="gradPic" className="pic" />
         <div className="information">
-          <h2 className="name">Conleth Stead</h2>
-          <p className="title">U of M LSA '24, Software Engineer, Ford Motor Company</p>
           <p className="intro">
-            Hello, my name is Conleth and I am a software engineer that enjoys
+            Welcome! I am a software engineer that enjoys
             building complex products and taking on new challenges. With a
             background in computer science and entrepreneurship, I am confident
             in my abilities both as a computer scientist and a potential leader.

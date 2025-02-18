@@ -1,16 +1,34 @@
 .about {
   padding: 2rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #332B29;
+  
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  
+  .name {
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
 
   .profile {
-    margin: 5rem 10rem;
+    margin: 3rem 0;
     display: flex;
-    justify-content: space-around;
-    background-color: #F9D9CE;
-    padding: 4rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    gap: 2.5rem;
+    /* justify-content: space-around; */
+    width: 80%;
+    padding: 3rem;
     border-radius: 1rem;
-
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
     .profile-pic {
       width: 25%;
@@ -20,8 +38,8 @@
 
     .pic {
       border-radius: 50%;
-      height: 30rem;
-      border: 10px solid white;
+      height: 27rem;
+      border: 10px solid #CCCCCC;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
@@ -30,6 +48,7 @@
       display: flex;
       flex-direction: column;
       text-align: left;
+      margin-top: 2rem;
 
       h2 {
         font-size: 2rem;
@@ -37,10 +56,6 @@
         font-weight: bolder;
       }
 
-      .title {
-        font-size: 1rem;
-        font-weight: bold;
-      }
     }
   }
 }

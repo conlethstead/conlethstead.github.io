@@ -16,19 +16,19 @@ export const Projects = () => {
     {
       name: 'Thread Library',
       image: threadImage,
-      overview: "A thread library",
+      overview: "Implemented my own thread library for a multiprocessor by writing the operating system functions for threads, mutexes, condition variables, and cpus.",
       moduleInfo: <ThreadLibrary />
     },
     {
       name: 'Memory Manager',
       image: memoryImage,
-      overview: 'A memory management system for efficient allocation.',
+      overview: 'Created an abstraction of a shared virtual memory space for application processes using advanced caching techniques to ensure efficient memory management.',
       moduleInfo: <MemoryManager />
     },
     {
       name: 'Multithreaded Network File System',
       image: networkImage,
-      overview: 'A file system supporting multithreaded operations.',
+      overview: 'Developed a persistent network file system and interface which concurrent clients can use to read, write, and manage files across a network.',
       moduleInfo: <NetworkFileSystem />
     },
     {
@@ -40,7 +40,7 @@ export const Projects = () => {
     {
       name: 'Instagram Clone',
       image: pokerImage,
-      overview: 'A clone of Instagram.',
+      overview: 'Deployed a fully-functional instagram clone complete with server & client side dynamic pages.',
       moduleInfo: <InstagramClone />
     }
   ];

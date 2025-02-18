@@ -2,6 +2,7 @@ import './App.css';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
+import fileIcon from "./images/fileIcon.svg";
 
 function App() {
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -22,17 +23,14 @@ function App() {
     <div className="App">
       <header className="nav-header">
         <div className="nav">
-          <a href="#home" onClick={handleNavClick}>Conleth</a>   
-          {/* put in home icon ^ */}
+          <a href="#about" onClick={handleNavClick}>Conleth</a>   
           <ul className="nav-list">
-            <a href="#about" onClick={handleNavClick}>About</a>
             <a href="#projects" onClick={handleNavClick}>Projects</a>
             <a href="#skills" onClick={handleNavClick}>Skills</a>
-            {/* <a href={resume} download="Conleth_Stead_Resume.pdf">Resume</a> */}
+            <a href={"/pdfs/ConlethSteadResume.pdf"} download="Conleth_Stead_Resume.pdf">
+              <img src={fileIcon} alt="Resume Icon" className='icon' /> Resume
+            </a>
           </ul>
-          {/* <a href="#timeline">Timeline</a>
-          <a href="#resume">Resume</a> */}
-          {/* add resume link */}
         </div>
       </header>
       <section id="about">
