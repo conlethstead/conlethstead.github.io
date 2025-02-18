@@ -23,7 +23,7 @@
     margin: 3rem 0;
     display: flex;
     gap: 2.5rem;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     width: 80%;
     padding: 3rem;
     border-radius: 1rem;

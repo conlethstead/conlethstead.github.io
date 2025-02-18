@@ -25,8 +25,8 @@ export const ThreadLibrary = () => {
         </p>
         <p className="tech">Technologies/Concepts: C++, Concurrency, Multithreading</p>
         <div className="images-container">
-          <img src={diagram2} alt="Diagram" className="diagram" />
-          <img src={timeline2} alt="Timeline" className="timeline" />
+          <img src={diagram2} alt="Diagram" className="diagram move-up" />
+          <img src={timeline2} alt="Timeline" className="timeline move-up" />
         </div>
       </div>
     </div>

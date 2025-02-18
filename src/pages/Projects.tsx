@@ -4,6 +4,7 @@ import threadImage from '../images/threadLibrary.png';
 import memoryImage from '../images/memory.jpeg';
 import networkImage from '../images/networkFile.png';
 import pokerImage from "../images/WelcometoPoker.png";
+import instaImage from "../images/homeInstaPic.png";
 
 import { ThreadLibrary } from "../projects/threadLibrary";
 import { InstagramClone } from "../projects/instagramClone";
@@ -34,15 +35,21 @@ export const Projects = () => {
     {
       name: 'Poker Hand Calculator',
       image: pokerImage,
-      overview: 'A tool to calculate the best poker hands.',
+      overview: 'Real-time analytics and strategic recommendations for poker hands, leveraging computer vision and probability calculations to enhance their decision-making and improve their overall gameplay.',
       moduleInfo: <PokerHandCalculator />
     },
     {
       name: 'Instagram Clone',
-      image: pokerImage,
+      image: instaImage,
       overview: 'Deployed a fully-functional instagram clone complete with server & client side dynamic pages.',
       moduleInfo: <InstagramClone />
-    }
+    },
+    // {
+    //   name: 'ELSO Site Redesign',
+    //   image: instaImage,
+    //   overview: 'Redesigned the ELSO website to be more user-friendly and modern.',
+    //   moduleInfo: <InstagramClone />
+    // }
   ];
 
   return (

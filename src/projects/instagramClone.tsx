@@ -1,10 +1,11 @@
 import "./schoolProjects.css";
-
+import account from "../images/account.png";
+import post from "../images/post.png";
 import login from "../images/login.png";
 
 export const InstagramClone = () => {
   return (
-    <div>
+    <div className="project-container">
       <h2>Instagram Clone</h2>
       <div className="content">
         <p className="takeaways">
@@ -22,8 +23,10 @@ export const InstagramClone = () => {
         <p className="tech">
           Technologies/Concepts: Python, Flask, SQL, JavaScript, AWS
         </p>
-        <div className="images-container">
+        <div className="insta-img-container">
             <img src={login} alt="Login" className="login" />
+            <img src={account} alt="Account" className="account" />
+            <img src={post} alt="Post" className="post" />
         </div>
       </div>
     </div>
