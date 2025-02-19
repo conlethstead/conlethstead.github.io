@@ -1,18 +1,15 @@
 .skills {
-  padding: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
   background-color: white;
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 
   p {
     margin-bottom: 2rem;
   }
 
   .languages {
-    /* background-color: #9FDDDC; */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6); */
     padding: 2rem;
     border-radius: 1rem;
     width: 80%;;

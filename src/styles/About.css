@@ -6,6 +6,11 @@
   align-items: center;
   color: #332B29;
   
+  .aboutMe {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
   
   .title {
     font-size: 1.25rem;
@@ -56,6 +61,13 @@
         font-weight: bolder;
       }
 
+      .social-icons {
+        padding: 1rem 0;
+        img {
+          margin: 0 0.5rem;
+          height: 2rem;
+        }
+      }
     }
   }
 }

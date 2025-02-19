@@ -7,7 +7,7 @@ export const SkillCard = ({ skill } : { skill: SkillCardProps }) => {
     <div className="skill-card">
       <img src={skill.image}></img>
       <h3>{skill.name}</h3>
-      <p>{skill.description}</p>
+      {/* <p>{skill.description}</p> */}
     </div>
   );
 }

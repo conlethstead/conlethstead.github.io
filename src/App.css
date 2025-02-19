@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color: #332B29;
+  font-weight: 400;
   
   .nav-header {
     background-color: #332B29;
