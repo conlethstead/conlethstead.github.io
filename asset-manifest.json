@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4f4bcc4.css",
-    "main.js": "/static/js/main.fb10949e.js",
+    "main.css": "/static/css/main.fe842986.css",
+    "main.js": "/static/js/main.3ed7818b.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/post.png": "/static/media/post.e403e56b6db4c52939c5.png",
     "static/media/gradPic.png": "/static/media/gradPic.d6f9f5707dd84dc9b199.png",
+    "static/media/homeInstaPic.png": "/static/media/homeInstaPic.b49f7137f6e12543fb2e.png",
     "static/media/memory.jpeg": "/static/media/memory.512c679c5e8c5ce5adec.jpeg",
     "static/media/threadLibrary.png": "/static/media/threadLibrary.890a732b8b43da35b5e9.png",
-    "static/media/homeInstaPic.png": "/static/media/homeInstaPic.2ea9d00a66c341869400.png",
     "static/media/networkFile.png": "/static/media/networkFile.19adc60cfdde08a52af7.png",
     "static/media/pokerHow.png": "/static/media/pokerHow.744d74fbe1f03481d2c3.png",
     "static/media/memorySystem.png": "/static/media/memorySystem.0e35e53cf2158a798f6b.png",
@@ -21,18 +21,20 @@
     "static/media/login.png": "/static/media/login.7b28a810cc0bcbe112a7.png",
     "static/media/results.png": "/static/media/results.69390feff81420c6e2ad.png",
     "static/media/react-brands-solid.svg": "/static/media/react-brands-solid.e5af4718ac40d4ea165cdd9fa7232737.svg",
+    "static/media/githubIcon.svg": "/static/media/githubIcon.aa834e0ac6a7cd0e794388c6e2b70100.svg",
     "static/media/python-brands-solid.svg": "/static/media/python-brands-solid.83595b1a6adacc25b3c9c1c62ac80ba1.svg",
     "static/media/icons8-spring-boot.svg": "/static/media/icons8-spring-boot.b39d866ef15303bd4182807431613051.svg",
     "static/media/js-brands-solid.svg": "/static/media/js-brands-solid.e4f8ed3f5ab67521fef7a1ccce003c97.svg",
     "index.html": "/index.html",
+    "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.e87aca0b63dfabaeafeeb453ad4330e5.svg",
     "static/media/fileIcon.svg": "/static/media/fileIcon.e52248e856922d9ec07748e547534d41.svg",
     "static/media/icons8-kotlin.svg": "/static/media/icons8-kotlin.6bf502793ae93c8572a1bee364284faf.svg",
-    "main.e4f4bcc4.css.map": "/static/css/main.e4f4bcc4.css.map",
-    "main.fb10949e.js.map": "/static/js/main.fb10949e.js.map",
+    "main.fe842986.css.map": "/static/css/main.fe842986.css.map",
+    "main.3ed7818b.js.map": "/static/js/main.3ed7818b.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f4bcc4.css",
-    "static/js/main.fb10949e.js"
+    "static/css/main.fe842986.css",
+    "static/js/main.3ed7818b.js"
   ]
 }
