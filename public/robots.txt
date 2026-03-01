@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all crawlers
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location (helps search engines discover your pages)
+Sitemap: https://conlethstead.github.io/sitemap.xml
