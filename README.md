@@ -1,60 +1,99 @@
-# Getting Started with Create React App
+# Conleth Stead — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio site hosted on GitHub Pages at [conlethstead.github.io](https://conlethstead.github.io).
 
-## Available Scripts
+## Tech stack
 
-In the project directory, you can run:
+- **React 19** with **TypeScript**
+- **Create React App** (react-scripts)
+- **React Router DOM**
+- **gh-pages** for deployment to GitHub Pages
 
-### `npm start`
+## Project structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+conlethstead.github.io/
+├── public/
+│   └── index.html              # HTML shell
+├── src/
+│   ├── App.tsx                 # Main app, nav, and section layout
+│   ├── App.css
+│   ├── index.tsx               # Entry point
+│   ├── index.css               # Global styles
+│   ├── reportWebVitals.ts
+│   ├── setupTests.ts
+│   ├── App.test.tsx
+│   ├── components/
+│   │   ├── ProjectCard.tsx     # Project card UI
+│   │   ├── SkillCard.tsx       # Skill card UI
+│   │   └── Components.ts       # Shared types/helpers
+│   ├── pages/
+│   │   ├── About.tsx           # About section
+│   │   ├── Projects.tsx        # Projects section
+│   │   ├── Skills.tsx          # Skills section
+│   │   └── Contact.tsx         # Contact (if used)
+│   ├── projects/               # Project detail components
+│   │   ├── memoryManager.tsx
+│   │   ├── pokerHandCalculator.tsx
+│   │   ├── networkFileSystem.tsx
+│   │   ├── threadLibrary.tsx
+│   │   ├── instagramClone.tsx
+│   │   └── schoolProjects.css
+│   ├── styles/
+│   │   ├── About.css
+│   │   ├── Projects.css
+│   │   ├── ProjectCard.css
+│   │   ├── Skills.css
+│   │   ├── SkillCard.css
+│   │   └── Contact.css
+│   └── images/                 # Icons, screenshots, assets
+├── pdfs/
+│   └── ConlethSteadResume.pdf
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Scripts
 
-### `npm test`
+| Command | Description |
+|--------|-------------|
+| `npm start` | Run dev server (default: http://localhost:3000) |
+| `npm run build` | Production build → `build/` |
+| `npm test` | Run tests (Jest) |
+| `npm run deploy` | Build and deploy to GitHub Pages (`gh-pages -d build`) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## How to Start on Port 3001
-
-To start the app on port 3001, you can set the `PORT` environment variable before running the `npm start` command:
+### Run on a different port
 
 ```sh
 PORT=3001 npm start
 ```
 
-This will run the app in development mode on [http://localhost:3001](http://localhost:3001).
+Runs the app at [http://localhost:3001](http://localhost:3001).
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The site is configured for GitHub Pages with `"homepage": "https://conlethstead.github.io/"` in `package.json`. Deploy with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm run deploy
+```
 
-## Colors used
+This runs `npm run build` then publishes the `build/` folder to the `gh-pages` branch.
 
-332B29 (black), EEAE56 (orange), 9FDDDC (blue), F9D9CE (pink), 9FD79A (green), FFFEE3 (cream)
+## Design
+
+Color palette used across the site:
+
+| Name   | Hex     |
+|--------|---------|
+| Black  | `#332B29` |
+| Orange | `#EEAE56` |
+| Blue   | `#9FDDDC` |
+| Pink   | `#F9D9CE` |
+| Green  | `#9FD79A` |
+| Cream  | `#FFFEE3` |
+
+## License
+
+Private project. All rights reserved.
