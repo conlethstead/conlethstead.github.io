@@ -14,7 +14,7 @@ export const Home = () => {
             I build <span className="hero-accent">wonderful</span> products.
           </h1>
           <p className="hero-tagline">
-            I help businesses build beautiful websites, mobile apps, and grow their brand through a great experience. Software Engineer at Ford Motor Company.
+            I am a young and passionate software engineer that loves to explore emerging technologies. I am currently a Software Engineer at Ford Motor Company.
           </p>
           <div className="hero-social">
             <a
