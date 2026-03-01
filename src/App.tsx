@@ -1,48 +1,49 @@
 import './App.css';
+import { HashRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { About } from './pages/About';
+import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
 import fileIcon from "./images/fileIcon.svg";
 
-function App() {
-  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute('href')?.substring(1);
-    const targetElement = document.getElementById(targetId!);
-    const headerOffset = document.querySelector('.nav-header')?.clientHeight || 0;
-    const elementPosition = targetElement?.getBoundingClientRect().top || 0;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  };
-
+function Layout() {
   return (
     <div className="App">
       <header className="nav-header">
         <div className="nav">
-          <a href="#about" onClick={handleNavClick}>Conleth</a>   
+          <Link to="/" className="nav-logo">Conleth</Link>
           <ul className="nav-list">
-            <a href="#projects" onClick={handleNavClick}>Projects</a>
-            <a href="#skills" onClick={handleNavClick}>Skills</a>
-            <a href={"/pdfs/ConlethSteadResume.pdf"} download="Conleth_Stead_Resume.pdf">
-              <img src={fileIcon} alt="Resume Icon" className='icon' /> Resume
-            </a>
+            <li><Link to="/works">Works</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/skills">Skills</Link></li>
+            <li>
+              <a href="/pdfs/ConlethSteadResume.pdf" download="Conleth_Stead_Resume.pdf" className="nav-resume">
+                <img src={fileIcon} alt="Resume" className="icon" /> Resume
+              </a>
+            </li>
           </ul>
+          <a href="mailto:conleth@example.com" className="nav-cta">Let's Talk</a>
         </div>
       </header>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
+      <main>
+        <Outlet />
+      </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="works" element={<Projects />} />
+          <Route path="about" element={<About />} />
+          <Route path="skills" element={<Skills />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 

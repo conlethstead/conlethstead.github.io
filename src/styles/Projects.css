@@ -1,11 +1,12 @@
 .projects {
   padding: 2rem;
-  /* border: #9FDDDC 3px dashed; */
-  background-color: #9FD79A;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 60vh;
+  color: #332B29;
 
   p {
     margin: 2rem;

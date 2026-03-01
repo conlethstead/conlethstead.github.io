@@ -1,11 +1,11 @@
 import "../styles/Skills.css";
 import { SkillCard } from "../components/SkillCard";
-import cplusplusImage from "../../public/images/icons8-c++-48.png";
-import javaImage from "../../public/images/js-brands-solid.svg";
-import kotlinImage from "../../public/images/icons8-kotlin.svg";
-import reactImage from "../../public/images/react-brands-solid.svg";
-import springImage from "../../public/images/icons8-spring-boot.svg";
-import pythonImage from "../../public/images/python-brands-solid.svg";
+import cplusplusImage from "../images/icons8-c++-48.png";
+import javaImage from "../images/js-brands-solid.svg";
+import kotlinImage from "../images/icons8-kotlin.svg";
+import reactImage from "../images/react-brands-solid.svg";
+import springImage from "../images/icons8-spring-boot.svg";
+import pythonImage from "../images/python-brands-solid.svg";
 
 export const Skills = () => {
   return (
@@ -44,7 +44,7 @@ export const Skills = () => {
             image: reactImage,
             description: "I have 3 years of experience leveraging React components and hooks to develop responsive web applications in academic projects and in professional work.",
           }}
-          />
+        />
         <SkillCard
           skill={{
             name: "Spring Boot",

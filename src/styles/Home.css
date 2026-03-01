@@ -1,0 +1,126 @@
+.home {
+  min-height: calc(100vh - 4rem);
+  background-color: #FFFEE3;
+  color: #332B29;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 4rem);
+  box-sizing: border-box;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+  max-width: 560px;
+}
+
+.hero-greeting {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 400;
+}
+
+.hero-headline {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-accent {
+  color: #EEAE56;
+}
+
+.hero-tagline {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  font-weight: 400;
+  color: #332B29;
+}
+
+.hero-social {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-social .icon {
+  height: 1.5rem;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.hero-social .icon:hover {
+  opacity: 1;
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: #EEAE56;
+  color: #332B29;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.875rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.15s;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  background-color: #e09d40;
+  transform: translateY(-1px);
+}
+
+.hero-image-wrap {
+  flex-shrink: 0;
+  width: min(380px, 45vw);
+  background: white;
+  border: 2px solid #332B29;
+  box-shadow: 8px 8px 0 0 rgba(51, 43, 41, 0.15);
+  transform: rotate(2deg);
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    width: min(320px, 85vw);
+    transform: rotate(-1deg);
+  }
+}
