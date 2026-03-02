@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
@@ -34,7 +34,7 @@ function Layout() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -43,7 +43,7 @@ function App() {
           <Route path="skills" element={<Skills />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
