@@ -1,12 +1,12 @@
 .projects {
   padding: 2rem;
-  background-color: #f8f8f8;
+  background-color: var(--surface);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
-  color: #332B29;
+  color: var(--accent-dark);
 
   p {
     margin: 2rem;

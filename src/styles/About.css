@@ -1,10 +1,10 @@
 .about {
   padding: 2rem;
-  background-color: white;
+  background-color: var(--surface);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #332B29;
+  color: var(--accent-dark);
   
   .aboutMe {
     font-size: 2rem;
@@ -32,8 +32,9 @@
     width: 80%;
     padding: 3rem;
     border-radius: 1rem;
-    background-color: #F5F5F5;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-light);
+    border: 2px solid var(--primary-hover);
+    box-shadow: 0 4px 12px rgba(29, 24, 66, 0.12);
 
     .profile-pic {
       width: 25%;
@@ -44,8 +45,8 @@
     .pic {
       border-radius: 50%;
       height: 27rem;
-      border: 10px solid #CCCCCC;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border: 10px solid var(--primary-hover);
+      box-shadow: 0 4px 8px 0 rgba(142, 13, 60, 0.25);
     }
 
     .information {

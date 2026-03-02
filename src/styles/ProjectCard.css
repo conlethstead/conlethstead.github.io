@@ -6,15 +6,17 @@
     width: 30rem;
     height: 30rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    border: #FFFEE3 0.5rem solid;
+    border: var(--primary-hover) 0.5rem solid;
     position: relative;
     
     h3 {
-        background-color: #FFFEE3;
+        background-color: var(--accent-light);
+        color: var(--accent-dark);
         padding: 0.5rem;
         font-size: 2rem;
         margin: 0;
         z-index: 1;
+        border-bottom: 3px solid var(--primary-hover);
     }
 
     button {
@@ -43,7 +45,7 @@
         height: 100%;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.8);
-        color: #FFFEE3;
+        color: white;
         font-size: 1.3rem;
         display: flex;
         flex-direction: column;
@@ -72,11 +74,11 @@
     
     .modal-content {
         scrollbar-width: thin;
-        scrollbar-color: #EEAE56 white;
-        background-color: #fefefe;
+        scrollbar-color: var(--primary) var(--surface);
+        background-color: var(--surface);
         border-radius: 2rem;
         padding: 2rem;
-        border: 1px solid #888;
+        border: 2px solid var(--primary-hover);
         width: 80%;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         text-align: left;
@@ -91,7 +93,7 @@
         }
         
         .close {
-            color: #EEAE56;
+            color: var(--primary);
             font-size: 3rem;
             font-weight: bold;
             align-self: flex-end;

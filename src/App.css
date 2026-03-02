@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  color: #332B29;
+  color: var(--accent-dark);
   font-weight: 400;
 }
 
 .App .nav-header {
-  background-color: white;
-  border-bottom: 1px solid rgba(51, 43, 41, 0.1);
+  background-color: var(--accent-dark);
+  border-bottom: 2px solid var(--primary);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,13 +30,13 @@
 
 .App .nav-logo {
   text-decoration: none;
-  color: #332B29;
+  color: var(--surface);
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .App .nav-logo:hover {
-  color: #EEAE56;
+  color: var(--accent-light);
 }
 
 .App .nav-list {
@@ -51,14 +51,14 @@
 .App .nav-list a,
 .App .nav-list li a {
   text-decoration: none;
-  color: #332B29;
+  color: var(--surface);
   font-size: 1rem;
   font-weight: 500;
 }
 
 .App .nav-list a:hover,
 .App .nav-list li a:hover {
-  color: #EEAE56;
+  color: var(--accent-light);
 }
 
 .App .nav-list .nav-resume {
@@ -74,8 +74,8 @@
 
 .App .nav-cta {
   display: inline-block;
-  background-color: #EEAE56;
-  color: #332B29;
+  background-color: var(--primary);
+  color: var(--surface);
   font-size: 0.9375rem;
   font-weight: 600;
   padding: 0.5rem 1.25rem;
@@ -85,9 +85,9 @@
 }
 
 .App .nav-cta:hover {
-  background-color: #e09d40;
+  background-color: var(--primary-hover);
   transform: translateY(-1px);
-  color: #332B29;
+  color: var(--surface);
 }
 
 .App main {

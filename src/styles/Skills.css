@@ -1,6 +1,6 @@
 .skills {
   padding: 2rem 2rem 5rem 2rem;
-  background-color: white;
+  background-color: var(--surface);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,6 @@
     width: 80%;;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    color: #332B29;
+    color: var(--accent-dark);
   }
 }

@@ -1,7 +1,7 @@
 .home {
   min-height: calc(100vh - 4rem);
-  background-color: #FFFEE3;
-  color: #332B29;
+  background-color: var(--surface);
+  color: var(--accent-dark);
 }
 
 .hero {
@@ -38,7 +38,7 @@
 }
 
 .hero-accent {
-  color: #EEAE56;
+  color: var(--primary);
 }
 
 .hero-tagline {
@@ -46,7 +46,7 @@
   line-height: 1.6;
   margin: 0 0 1.5rem 0;
   font-weight: 400;
-  color: #332B29;
+  color: var(--accent-dark);
 }
 
 .hero-social {
@@ -68,8 +68,8 @@
 
 .hero-cta {
   display: inline-block;
-  background-color: #EEAE56;
-  color: #332B29;
+  background-color: var(--primary);
+  color: var(--surface);
   font-size: 1.125rem;
   font-weight: 600;
   padding: 0.875rem 1.5rem;
@@ -81,16 +81,16 @@
 }
 
 .hero-cta:hover {
-  background-color: #e09d40;
+  background-color: var(--primary-hover);
   transform: translateY(-1px);
 }
 
 .hero-image-wrap {
   flex-shrink: 0;
   width: min(380px, 45vw);
-  background: white;
-  border: 2px solid #332B29;
-  box-shadow: 8px 8px 0 0 rgba(51, 43, 41, 0.15);
+  background: var(--surface);
+  border: 2px solid var(--primary-hover);
+  box-shadow: 8px 8px 0 0 rgba(142, 13, 60, 0.2);
   transform: rotate(2deg);
   padding: 0.5rem;
   box-sizing: border-box;
