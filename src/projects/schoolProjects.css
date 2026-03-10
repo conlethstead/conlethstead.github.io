@@ -25,6 +25,10 @@
                 padding: 1rem; /* Add padding to ensure spacing */
             }
 
+            img.architecture-diagram {
+                width: 90%;
+                max-width: 900px;
+            }
         }
         
         .insta-img-container {

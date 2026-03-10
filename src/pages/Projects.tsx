@@ -5,15 +5,31 @@ import memoryImage from '../images/memory.jpeg';
 import networkImage from '../images/networkFile.png';
 import pokerImage from "../images/WelcometoPoker.png";
 import instaImage from "../images/homeInstaPic.png";
+import bankingSupportImage from "../images/BankingSupport.png";
+import insightForgeImage from "../images/InsightForge.png";
 
 import { ThreadLibrary } from "../projects/threadLibrary";
 import { InstagramClone } from "../projects/instagramClone";
 import { MemoryManager } from "../projects/memoryManager";
 import { NetworkFileSystem } from "../projects/networkFileSystem";
 import { PokerHandCalculator } from "../projects/pokerHandCalculator";
+import { BankingSupport } from "../projects/bankingSupport";
+import { InsightForge } from "../projects/insightForge";
 
 export const Projects = () => {
   const projects = [
+    {
+      name: 'Banking Support',
+      image: bankingSupportImage,
+      overview: 'Multi-agent GenAI system for banking customer support: classification, personalized responses, and ticket tracking via LangGraph and Streamlit on Google Cloud Run.',
+      moduleInfo: <BankingSupport />
+    },
+    {
+      name: 'InsightForge',
+      image: insightForgeImage,
+      overview: 'BI chat app: upload CSV, ask questions (RAG) or request visualizations (LLM-generated code in sandbox). Streamlit on Google Cloud Run.',
+      moduleInfo: <InsightForge />
+    },
     {
       name: 'Thread Library',
       image: threadImage,
@@ -44,12 +60,6 @@ export const Projects = () => {
       overview: 'Deployed a fully-functional instagram clone complete with server & client side dynamic pages.',
       moduleInfo: <InstagramClone />
     },
-    // {
-    //   name: 'ELSO Site Redesign',
-    //   image: instaImage,
-    //   overview: 'Redesigned the ELSO website to be more user-friendly and modern.',
-    //   moduleInfo: <InstagramClone />
-    // }
   ];
 
   return (
