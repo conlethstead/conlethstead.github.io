@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
+import { EmailModal } from './components/EmailModal';
 import fileIcon from "./images/fileIcon.svg";
 
 function Layout() {
+  const [emailModalOpen, setEmailModalOpen] = useState(false);
+
   return (
     <div className="App">
       <header className="nav-header">
@@ -22,12 +26,15 @@ function Layout() {
               </a>
             </li>
           </ul>
-          <a href="mailto:conleth@example.com" className="nav-cta">Let's Talk</a>
+          <button type="button" className="nav-cta" onClick={() => setEmailModalOpen(true)}>
+            Let's Talk
+          </button>
         </div>
       </header>
       <main>
         <Outlet />
       </main>
+      <EmailModal isOpen={emailModalOpen} onClose={() => setEmailModalOpen(false)} />
     </div>
   );
 }
